@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSX Multiple Currencies Liquidated</title>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, Helvetica, Arial, sans-serif;
+    ">
+    <!-- template params: ${email} ${symbol1} ${leverage1} ${direction1} ${directionColor1} ${quantity1} ${markPrice1} ${liquidationTime1} ${symbol2} ${leverage2} ${direction2} ${directionColor2} ${quantity2} ${markPrice2} ${liquidationTime2} -->
+    <!-- directionColor: e.g. long #16a34a, short #ea580c -->
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      role="presentation">
+      <tr>
+        <td align="center" style="padding: 0">
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            role="presentation"
+            style="
+              width: 100%;
+              max-width: 600px;
+              background: #fafafa;
+              border-radius: 8px;
+              padding: 20px;
+            ">
+            <tr>
+              <td style="padding: 0">
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="width: 100%; border-collapse: collapse">
+                  <tr>
+                    <td style="padding: 0 0 30px 0">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation">
+                        <tr>
+                          <td style="padding: 0">
+                            <img
+                              src="https://aws-msx-assets.s3.ap-southeast-1.amazonaws.com/uploads/activity/20260421/4a3eda4ad5ed4eddafeb4838f40d2f2a.png"
+                              alt="MSX Logo"
+                              style="
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                border: 0;
+                              " />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="padding: 0">
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation">
+                        <tr>
+                          <td
+                            style="
+                              font-size: 18px;
+                              font-weight: 700;
+                              color: #000000;
+                              text-align: left;
+                              line-height: 1.4;
+                            ">
+                            Multiple Currencies Liquidated
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            style="
+                              font-size: 14px;
+                              color: #000000;
+                              line-height: 1.65;
+                              text-align: left;
+                              font-weight: 400;
+                              padding: 16px 0 0 0;
+                            ">
+                            Dear user:
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            style="
+                              font-size: 14px;
+                              color: #000000;
+                              line-height: 1.65;
+                              text-align: left;
+                              font-weight: 400;
+                              padding: 8px 0 0 0;
+                            ">
+                            Due to your account
+                            <span
+                              style="
+                                font-weight: 600;
+                                color: #000000;
+                                text-decoration: none;
+                              "
+                              >${email}</span
+                            >
+                            falling below the maintenance margin requirement,
+                            your relevant contract positions under cross-margin
+                            mode have been forcibly liquidated by the system to
+                            protect your account.
+                            <span style="font-weight: 600; color: #000000"
+                              >The liquidation details are as follows:</span
+                            >
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="padding: 20px 0 16px">
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="background: #ffffff; border-radius: 8px">
+                              <tr>
+                                <td style="padding: 20px 12px">
+                                  <table
+                                    width="100%"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation">
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Contract:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${symbol1}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Leverage:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${leverage1}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Side:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              <span
+                                                style="font-weight: 600; color: ${directionColor1};"
+                                                >${direction1}</span
+                                              >
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Amount:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${quantity1}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Mark price:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${markPrice1}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Liquidation time:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${liquidationTime1} (UTC)
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 0 0 20px">
+                            <table
+                              width="100%"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              role="presentation"
+                              style="background: #ffffff; border-radius: 8px">
+                              <tr>
+                                <td style="padding: 20px 12px">
+                                  <table
+                                    width="100%"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    border="0"
+                                    role="presentation">
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Contract:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${symbol2}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Leverage:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${leverage2}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Side:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              <span
+                                                style="font-weight: 600; color: ${directionColor2};"
+                                                >${direction2}</span
+                                              >
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Amount:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${quantity2}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Mark price:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${markPrice2}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              Liquidation time:
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${liquidationTime2} (UTC)
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              font-size: 14px;
+                              color: #000000;
+                              line-height: 1.65;
+                              text-align: left;
+                              font-weight: 400;
+                              padding: 0 0 8px 0;
+                            ">
+                            Best wishes<br />
+                            <span style="font-weight: 600">MSX Team</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            style="
+                              font-size: 14px;
+                              color: #000000;
+                              line-height: 1.65;
+                              text-align: left;
+                              font-weight: 400;
+                              padding: 0;
+                            ">
+                            This is an automated message, please do not
+                            reply.<br />
+                            Attention: If you have any questions please contact
+                            <a
+                              href="mailto:info@msx.com"
+                              style="
+                                color: #000000;
+                                font-weight: 600;
+                                text-decoration: underline;
+                              "
+                              >info@msx.com</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                align="center"
+                style="
+                  padding: 50px 0 20px;
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: #000000;
+                  text-align: center;
+                ">
+                Trade anytime, anywhere with the MSX APP
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                align="center"
+                style="padding: 0 0 16px; text-align: center; width: 100%">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  width="100%"
+                  style="
+                    margin: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    table-layout: fixed;
+                    border-collapse: collapse;
+                  ">
+                  <tr>
+                    <td
+                      align="center"
+                      valign="top"
+                      width="50%"
+                      style="
+                        width: 50%;
+                        padding: 0 0 12px 0;
+                        text-align: center;
+                      ">
+                      <a
+                        href="https://apps.apple.com/us/app/msx-buy-bitcoin-crypto/id6759999989"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 170px;
+                          box-sizing: border-box;
+                          background: #000000;
+                          color: #ffffff;
+                          padding: 8px 12px;
+                          border-radius: 6px;
+                          text-decoration: none;
+                          font-size: 10px;
+                          font-weight: 500;
+                          text-align: center;
+                          margin: 0 0 0 auto;
+                        ">
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          border="0"
+                          align="center"
+                          role="presentation"
+                          style="margin: 0 auto; border-collapse: collapse">
+                          <tr>
+                            <td
+                              valign="middle"
+                              style="
+                                vertical-align: middle;
+                                padding: 0 8px 0 0;
+                              ">
+                              <img
+                                src="https://aws-msx-assets.s3.ap-southeast-1.amazonaws.com/uploads/activity/20260402/0968dfb7d284e529e16e3857a354163.png"
+                                width="22"
+                                height="22"
+                                alt="Apple"
+                                style="
+                                  display: block;
+                                  width: 22px;
+                                  height: 22px;
+                                  border: 0;
+                                " />
+                            </td>
+                            <td
+                              style="
+                                vertical-align: middle;
+                                color: #ffffff;
+                                line-height: 1.25;
+                                font-size: 9px;
+                                text-align: left;
+                              ">
+                              <span style="display: block">Download on</span>
+                              <span
+                                style="
+                                  display: block;
+                                  font-weight: 600;
+                                  font-size: 10px;
+                                "
+                                >App Store</span
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </a>
+                    </td>
+                    <td
+                      valign="top"
+                      width="16"
+                      style="
+                        width: 16px;
+                        min-width: 16px;
+                        max-width: 16px;
+                        padding: 0;
+                        font-size: 1px;
+                        line-height: 1px;
+                      ">
+                      &nbsp;
+                    </td>
+                    <td
+                      align="center"
+                      valign="top"
+                      width="50%"
+                      style="
+                        width: 50%;
+                        padding: 0 0 12px 0;
+                        text-align: center;
+                      ">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.msx.exapp"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 170px;
+                          box-sizing: border-box;
+                          background: #000000;
+                          color: #ffffff;
+                          padding: 8px 12px;
+                          border-radius: 6px;
+                          text-decoration: none;
+                          font-size: 10px;
+                          font-weight: 500;
+                          text-align: center;
+                        ">
+                        <table
+                          cellpadding="0"
+                          cellspacing="0"
+                          border="0"
+                          align="center"
+                          role="presentation"
+                          style="margin: 0 auto; border-collapse: collapse">
+                          <tr>
+                            <td
+                              valign="middle"
+                              style="
+                                vertical-align: middle;
+                                padding: 0 8px 0 0;
+                              ">
+                              <img
+                                src="https://aws-msx-assets.s3.ap-southeast-1.amazonaws.com/uploads/activity/20260402/b55eca9035594f088284d26513d37387.png"
+                                width="22"
+                                height="22"
+                                alt="Google Play"
+                                style="
+                                  display: block;
+                                  width: 22px;
+                                  height: 22px;
+                                  border: 0;
+                                " />
+                            </td>
+                            <td
+                              style="
+                                vertical-align: middle;
+                                color: #ffffff;
+                                line-height: 1.25;
+                                font-size: 9px;
+                                text-align: left;
+                              ">
+                              <span style="display: block">Download on</span>
+                              <span
+                                style="
+                                  display: block;
+                                  font-weight: 600;
+                                  font-size: 10px;
+                                "
+                                >Google Play</span
+                              >
+                            </td>
+                          </tr>
+                        </table>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                align="center"
+                style="
+                  border-top: 1px solid #eeeeee;
+                  text-align: center;
+                  width: 100%;
+                  padding: 0;
+                ">
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  role="presentation"
+                  style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    text-align: center;
+                  ">
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        padding: 28px 0 26px;
+                        text-align: center;
+                        width: 100%;
+                      ">
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        role="presentation"
+                        style="width: 100%; border-collapse: collapse">
+                        <tr>
+                          <td
+                            width="50%"
+                            align="center"
+                            style="
+                              width: 50%;
+                              padding: 0;
+                              font-size: 0;
+                              line-height: 0;
+                            ">
+                            &nbsp;
+                          </td>
+                          <td
+                            align="center"
+                            valign="middle"
+                            style="
+                              padding: 0;
+                              text-align: center;
+                              width: 1%;
+                              white-space: nowrap !important;
+                            ">
+                            <table
+                              width="162"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              align="center"
+                              role="presentation"
+                              style="
+                                width: 162px;
+                                max-width: 162px;
+                                border-collapse: collapse;
+                                margin: 0;
+                              ">
+                              <tr>
+                                <td style="padding: 0 18px">
+                                  <a
+                                    href="https://t.me/MSXOfficial"
+                                    style="
+                                      display: inline-block;
+                                      line-height: 0;
+                                    "
+                                    aria-label="Telegram">
+                                    <img
+                                      src="https://aws-msx-assets.s3.ap-southeast-1.amazonaws.com/uploads/activity/20260402/d274c4a8895f4a769735e2295d3fd893.png"
+                                      width="18"
+                                      height="18"
+                                      alt="Telegram"
+                                      style="
+                                        display: block;
+                                        width: 18px;
+                                        height: 18px;
+                                        border: 0;
+                                      " />
+                                  </a>
+                                </td>
+                                <td style="padding: 0 18px">
+                                  <a
+                                    href="https://x.com/MSX_CN"
+                                    style="
+                                      display: inline-block;
+                                      line-height: 0;
+                                    "
+                                    aria-label="X">
+                                    <img
+                                      src="https://aws-msx-assets.s3.ap-southeast-1.amazonaws.com/uploads/activity/20260402/168f0eb2fd2c47ba960ae85604b01ca2.png"
+                                      width="18"
+                                      height="18"
+                                      alt="X"
+                                      style="
+                                        display: block;
+                                        width: 18px;
+                                        height: 18px;
+                                        border: 0;
+                                      " />
+                                  </a>
+                                </td>
+                                <td style="padding: 0 18px">
+                                  <a
+                                    href="https://www.msx.com"
+                                    style="
+                                      display: inline-block;
+                                      line-height: 0;
+                                    "
+                                    aria-label="MSX">
+                                    <img
+                                      src="https://aws-msx-assets.s3.ap-southeast-1.amazonaws.com/uploads/activity/20260402/6a82f39dc15e4108a1f6608ac7386b98.png"
+                                      width="18"
+                                      height="18"
+                                      alt="MSX"
+                                      style="
+                                        display: block;
+                                        width: 18px;
+                                        height: 18px;
+                                        border: 0;
+                                      " />
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td
+                            width="50%"
+                            align="center"
+                            style="
+                              width: 50%;
+                              padding: 0;
+                              font-size: 0;
+                              line-height: 0;
+                            ">
+                            &nbsp;
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        font-size: 12px;
+                        color: #8d8d8d;
+                        line-height: 16px;
+                        padding: 0 0 4px 0;
+                        text-align: center;
+                        width: 100%;
+                      ">
+                      <div
+                        align="center"
+                        style="
+                          text-align: center;
+                          width: 100%;
+                          margin: 0;
+                          padding: 0;
+                          font-weight: 400;
+                        ">
+                        Thank you for choosing MSX. If you have any questions or
+                        feedback, please contact MSX Customer Support.
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        font-size: 12px;
+                        color: #8d8d8d;
+                        line-height: 16px;
+                        text-align: center;
+                        width: 100%;
+                        padding: 0;
+                      ">
+                      <div
+                        align="center"
+                        style="
+                          text-align: center;
+                          width: 100%;
+                          margin: 0;
+                          padding: 0;
+                          font-weight: 400;
+                        ">
+                        Copyright © 2026. All rights reserved.
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
