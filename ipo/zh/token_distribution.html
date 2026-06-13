@@ -15,7 +15,7 @@
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
         Roboto, Helvetica, Arial, sans-serif;
     ">
-    <!-- template params: ${accountEmail} ${projectName} ${purchaseAmount} ${issuePrice} ${distributedQuantity} -->
+    <!-- template params: ${accountEmail} ${projectName} ${purchaseAmount} ${issuePrice} ${currentPrice} ${distributedQuantity} -->
     <table
       width="100%"
       cellpadding="0"
@@ -247,6 +247,45 @@
                                                 word-break: break-all;
                                               ">
                                               ${issuePrice}
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="padding: 0 0 20px">
+                                        <table
+                                          width="100%"
+                                          cellpadding="0"
+                                          cellspacing="0"
+                                          border="0"
+                                          role="presentation">
+                                          <tr>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0 16px 0 0;
+                                                text-align: left;
+                                                white-space: nowrap !important;
+                                                vertical-align: top;
+                                              ">
+                                              当前价：
+                                            </td>
+                                            <td
+                                              style="
+                                                font-size: 14px;
+                                                font-weight: 600;
+                                                color: #000000;
+                                                line-height: 1.5;
+                                                padding: 0;
+                                                text-align: right;
+                                                width: 100%;
+                                                word-break: break-all;
+                                              ">
+                                              ${currentPrice}
                                             </td>
                                           </tr>
                                         </table>
