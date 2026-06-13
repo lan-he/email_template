@@ -1,5 +1,5 @@
 <!-- 项目上市，代币下发到现货账户时 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
   <head>
     <meta charset="UTF-8" />
@@ -12,10 +12,18 @@
       margin: 0;
       padding: 0;
       background: #ffffff;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
-        Roboto, Helvetica, Arial, sans-serif;
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
     ">
-    <!-- template params: ${accountEmail} ${projectName} ${purchaseAmount} ${issuePrice} ${currentPrice} ${distributedQuantity} -->
+    <!-- template params: ${accountEmail} ${ipoName} ${subscriptionToken} ${purchaseAmount} ${issuePrice} ${distributedQuantity} -->
     <table
       width="100%"
       cellpadding="0"
@@ -87,7 +95,7 @@
                               text-align: left;
                               line-height: 1.4;
                             ">
-                            ${projectName} 代币发放
+                            ${ipoName} 代币发放
                           </td>
                         </tr>
 
@@ -115,7 +123,8 @@
                               font-weight: 400;
                               padding: 8px 0 0 0;
                             ">
-                            您的账号 ${accountEmail}，${projectName} 认购现已正式到期结算，相应份额已分发至您的持仓中。
+                            您的账号 ${accountEmail}，${ipoName}
+                            认购现已正式到期结算，相应份额已分发至您的持仓中。
                           </td>
                         </tr>
                         <tr>
@@ -168,7 +177,7 @@
                                                 width: 100%;
                                                 word-break: break-all;
                                               ">
-                                              ${projectName}
+                                              ${ipoName}
                                             </td>
                                           </tr>
                                         </table>
@@ -360,7 +369,8 @@
                               font-weight: 400;
                               padding: 0 0 16px 0;
                             ">
-                            根据认购协议，分发数量已扣除管理费、认购费以及盈利部分对应的 Carry 费用。
+                            根据认购协议，分发数量已扣除管理费、认购费以及盈利部分对应的
+                            Carry 费用。
                           </td>
                         </tr>
 
@@ -386,11 +396,20 @@
                               text-align: left;
                               font-weight: 400;
                               padding: 0 0 20px 0;
-                              font-family: ui-monospace, SFMono-Regular, Menlo,
-                                Monaco, Consolas, Liberation Mono, Courier New,
+                              font-family:
+                                ui-monospace,
+                                SFMono-Regular,
+                                Menlo,
+                                Monaco,
+                                Consolas,
+                                Liberation Mono,
+                                Courier New,
                                 monospace;
                             ">
-                            预期份额 = [实际认购额 - 实际认购额 × （管理费 + 认购费）] / 认购价格<br /><br />分发数量 = 预期份额 - 预期份额 × （当前价格 - 认购价格）× 表现费 / 当前价格
+                            预期份额 = [实际认购额 - 实际认购额 × （管理费 +
+                            认购费）] / 认购价格<br /><br />分发数量 = 预期份额
+                            - 预期份额 × （当前价格 - 认购价格）× 表现费 /
+                            当前价格
                           </td>
                         </tr>
 
@@ -532,9 +551,7 @@
                         padding: 0;
                         font-size: 1px;
                         line-height: 1px;
-                      ">
-                      &nbsp;
-                    </td>
+                      "></td>
                     <td
                       align="center"
                       valign="top"
@@ -657,9 +674,7 @@
                               padding: 0;
                               font-size: 0;
                               line-height: 0;
-                            ">
-                            &nbsp;
-                          </td>
+                            "></td>
                           <td
                             align="center"
                             valign="middle"
@@ -757,9 +772,7 @@
                               padding: 0;
                               font-size: 0;
                               line-height: 0;
-                            ">
-                            &nbsp;
-                          </td>
+                            "></td>
                         </tr>
                       </table>
                     </td>
